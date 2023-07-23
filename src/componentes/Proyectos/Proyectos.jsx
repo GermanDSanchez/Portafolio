@@ -1,6 +1,6 @@
 import Bike from '../icons/Bike'
 import Google from '../icons/Google'
-import javascript from '../../imgs/javascript.png'
+import javass from '../../imgs/javass.png'
 import css3 from '../../imgs/css3.png'
 import html5 from '../../imgs/html5.png'
 import react from '../../imgs/react.png'
@@ -46,11 +46,11 @@ export default function Proyectos () {
     return (
         <section id='projects' className={`relative flex flex-col items-center p-5 pt-28 gap-6`}>
             <h2 className="text-5xl mb-12">Proyectos</h2>
-            <Proyecto lenguaje1={javascript} lenguaje2={css3} lenguaje3={html5} title={'Maqueta E-Commerce'} imagen={<Bike />}
+            <Proyecto lenguaje1={javass} lenguaje2={css3} lenguaje3={html5} title={'Maqueta E-Commerce'} imagen={<Bike />}
             description="Maqueta de E-Commerce sobre bicicletas, hecho exclusivamente en HTML, CSS y Javascript nativo" />
-            <Proyecto lenguaje1={javascript} lenguaje2={css3} lenguaje3={html5} title={'Uso de API/Fetch'} imagen={<img className='w-44' src={api}/>}
+            <Proyecto lenguaje1={javass} lenguaje2={css3} lenguaje3={html5} title={'Uso de API/Fetch'} imagen={<img className='w-44' src={api}/>}
             description="Maqueta de E-Commerce sobre bicicletas, hecho exclusivamente en HTML, CSS y Javascript nativo" />
-            <Proyecto lenguaje1={''} lenguaje2={javascript} lenguaje3={''} title={'Retos de Javascript'} imagen={<span className='text-5xl font-bold'>Retos<span className="p-1 text-black uppercase bg-yellow-400 rounded-lg">js</span></span>}
+            <Proyecto lenguaje1={''} lenguaje2={javass} lenguaje3={''} title={'Retos de Javascript'} imagen={<span className='text-5xl font-bold'>Retos<span className="p-1 text-black uppercase bg-yellow-400 rounded-lg">js</span></span>}
             description="Maqueta de E-Commerce sobre bicicletas, hecho exclusivamente en HTML, CSS y Javascript nativo" />
             <Proyecto lenguaje1={react} lenguaje2={css3} lenguaje3={''} title={'Maqueta/Clon Google'} imagen={<Google />}
             description="Maqueta de E-Commerce sobre bicicletas, hecho exclusivamente en HTML, CSS y Javascript nativo" />

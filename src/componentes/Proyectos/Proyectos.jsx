@@ -10,10 +10,14 @@ import apimovies from '../../../public/img/apimovies.png'
 import GitHub from '../icons/GitHub'
 import Eye from '../icons/Eye'
 import maquetagoogle from '../../../public/video/maquetagoogle.webm'
+import primerapi from '../../../public/video/primerapi.webm'
+import maquetaecommerce from '../../../public/video/maquetaecommerce.webm'
+import apimovie from '../../../public/video/apimovie.webm'
+import portafolio from '../../../public/video/portafolio.webm'
 import { useState, useEffect, useRef } from 'react'
 
 // eslint-disable-next-line react/prop-types
-const Proyecto = ({ lenguaje1, lenguaje2, lenguaje3, title, imagen, description, zoom }) => {
+const Proyecto = ({ lenguaje1, lenguaje2, lenguaje3, title, imagen, description, zoom, videoproject }) => {
 
     const [video, setVideo] = useState(false)
 
@@ -73,9 +77,9 @@ const Proyecto = ({ lenguaje1, lenguaje2, lenguaje3, title, imagen, description,
             </div>
         </article>
         {isWideScreen && 
-        <div ref={containerRef2} className={`${video ? 'w-[710px] h-[400px] rounded-r-lg bg-orange-100 p-4 absolute flex flex-col items-center z-40 opacity-1 visible transform translate-x-[285px] translate-y-[120px] duration-500' : 
+        <div ref={containerRef2} className={`${video ? 'w-[730px] h-[430px] rounded-r-lg bg-orange-100 p-4 absolute flex flex-col items-center z-40 opacity-1 visible transform translate-x-[295px] translate-y-[117px] duration-500' : 
         'xl:w-2/12 absolute flex flex-col items-center z-40 opacity-0 invisible transform translate-x-[2000px] translate-y-44 duration-500'}`}>
-            <video className='w-full' src={maquetagoogle} controls={false} autoPlay muted loop></video>
+            <video className='w-full' src={videoproject} controls={false} autoPlay muted loop></video>
         </div>}
         </>
     )
@@ -88,17 +92,17 @@ export default function Proyectos () {
                 <h2 className="text-5xl mb-12">Proyectos</h2>
                 <div className='flex flex-wrap justify-center gap-10 max-[472px]:gap-6'>
                     <Proyecto lenguaje1={react} lenguaje2={tailwind} lenguaje3={''} title={'Portafolio (5° Proyecto)'} imagen={<span className='text-4xl font-bold flex flex-col'>Portafolio<span className="p-1 text-black uppercase bg-yellow-400 rounded-lg">German</span></span>}
-                    description="Portafolio sobre mis proyectos, avances y contacto, hecho en React y Tailwind" zoom={'xl:translate-x-[135px] xl:translate-y-40'}/>
+                    description="Portafolio (Responsive Design) sobre mis proyectos, avances y contacto, hecho en React y Tailwind" zoom={'xl:translate-x-[135px] xl:translate-y-40'} videoproject={portafolio}/>
                     <Proyecto lenguaje1={react} lenguaje2={tailwind} lenguaje3={''} title={'APIMovies (4° Proyecto)'} imagen={<img className='w-52' src={apimovies}/>}
-                    description="Pagina Web sobre peliculas y series usando la API de TheMovieDB, hecho en React y Tailwind" zoom={'xl:-translate-x-[345px] xl:translate-y-40'}/>
+                    description="Pagina Web (Desktop) sobre peliculas y series usando la API de TheMovieDB, hecho en React y Tailwind" zoom={'xl:-translate-x-[345px] xl:translate-y-40'} videoproject={apimovie}/>
                     <Proyecto lenguaje1={react} lenguaje2={css3} lenguaje3={''} title={'Maqueta/Clon Google (3° Proyecto)'} imagen={<Google />}
-                    description="Maqueta/Clon del buscador de Google, hecho en React y CSS" zoom={'xl:-translate-x-[825px] xl:translate-y-40'}/>
+                    description="Maqueta/Clon del buscador de Google (Desktop), hecho en React y CSS" zoom={'xl:-translate-x-[825px] xl:translate-y-40'} videoproject={maquetagoogle}/>
                     <Proyecto lenguaje1={javass} lenguaje2={css3} lenguaje3={html5} title={'Uso de API/Fetch (2° Proyecto)'} imagen={<img className='w-44' src={api}/>}
-                    description="Llamado a API/uso de Fetch basico, hecho con HTML, CSS y Javascript nativo" zoom={'xl:translate-x-[135px] xl:-translate-y-[200px]'}/>
+                    description="Llamado a API/uso de Fetch basico, hecho con HTML, CSS y Javascript nativo" zoom={'xl:translate-x-[135px] xl:-translate-y-[225px]'} videoproject={primerapi}/>
                     <Proyecto lenguaje1={javass} lenguaje2={css3} lenguaje3={html5} title={'Maqueta E-Commerce (1° Proyecto)'} imagen={<Bike />}
-                    description="Maqueta de E-Commerce sobre bicicletas, hecho exclusivamente en HTML, CSS y Javascript nativo" zoom={'xl:-translate-x-[345px] xl:-translate-y-[200px]'}/>
+                    description="Maqueta de E-Commerce (Responsive Design) sobre bicicletas, hecho exclusivamente en HTML, CSS y Javascript nativo" zoom={'xl:-translate-x-[345px] xl:-translate-y-[225px]'} videoproject={maquetaecommerce}/>
                     <Proyecto lenguaje1={''} lenguaje2={javass} lenguaje3={''} title={'Retos de Javascript'} imagen={<span className='text-5xl font-bold'>Retos<span className="p-1 text-black uppercase bg-yellow-400 rounded-lg">js</span></span>}
-                    description="Retos de Javascript que voy realizando de diferentes paginas web" zoom={'xl:-translate-x-[825px] xl:-translate-y-[200px]'}/>
+                    description="Retos de Javascript que voy realizando de diferentes paginas web" zoom={'xl:-translate-x-[825px] xl:-translate-y-[225px]'} videoproject={apimovie}/>
                 </div>
             </div>
         </section>

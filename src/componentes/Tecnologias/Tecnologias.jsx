@@ -1,5 +1,5 @@
-import css3 from '../../imgs/css3.png'
-import html5 from '../../imgs/html5.png'
+import css3 from '../../../dist/assets/css3-d2e9f9dd.png'
+import html5 from '../../../dist/assets/html5-b7817ea6.png'
 import javass from '../../imgs/javass.png'
 import reacttecnologias from '../../imgs/reacttecnologias.png'
 import tailwindtecnologias from '../../imgs/tailwindtecnologias.png'

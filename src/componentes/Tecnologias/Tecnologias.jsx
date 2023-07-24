@@ -1,5 +1,6 @@
 import css3 from '../../imgs/css3.png'
 import html5 from '../../imgs/html5.png'
+import javass from '../../imgs/javass.png'
 import reacttecnologias from '../../imgs/reacttecnologias.png'
 import tailwindtecnologias from '../../imgs/tailwindtecnologias.png'
 import github from '../../imgs/github.png'
@@ -10,6 +11,7 @@ export default function Tecnologias () {
     const tecnologias = [
         {name: 'HTML', image: html5}, 
         {name: 'CSS', image: css3},
+        {name: 'Javascript', image: javass},
         {name: 'React', image: reacttecnologias},
         {name: 'Tailwind', image: tailwindtecnologias},
         {name: 'Github', image: github},

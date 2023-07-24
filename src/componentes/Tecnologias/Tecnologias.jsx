@@ -1,10 +1,10 @@
-import css3 from '../../imgs/css3.png'
-import html5 from '../../imgs/html5.png'
-import javass from '../../imgs/javass.png'
-import reacttecnologias from '../../imgs/reacttecnologias.png'
-import tailwindtecnologias from '../../imgs/tailwindtecnologias.png'
-import github from '../../imgs/github.png'
-import git from '../../imgs/git.png'
+import css3 from '../../../public/img/css3.png'
+import html5 from '../../../public/img/html5.png'
+import javass from '../../../public/img/javass.png'
+import reacttecnologias from '../../../public/img/reacttecnologias.png'
+import tailwindtecnologias from '../../../public/img/tailwindtecnologias.png'
+import github from '../../../public/img/github.png'
+import git from '../../../public/img/git.png'
 
 export default function Tecnologias () {
 

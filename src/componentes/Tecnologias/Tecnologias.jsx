@@ -18,12 +18,12 @@ export default function Tecnologias () {
         {name: 'Git', image: git}]
 
     return (
-        <section id='technologies' className='flex flex-col items-center justify-evenly mx-5 h-screen'>
+        <section id='technologies' className='flex flex-col items-center justify-evenly mx-5 h-[700px] max-md:h-screen'>
             <h2 className='text-5xl'>Tecnologias</h2>
-            <div className="flex flex-wrap items-center justify-center gap-3">
+            <div className="flex flex-wrap items-center justify-center gap-3 max-w-[800px]">
                 {tecnologias.map((tecnologia) => (
-                    <div key={tecnologia.name} className='flex flex-col w-32 items-center p-2 justify-between shadow-xl rounded-2xl'>
-                        <img className="rounded-lg object-contain w-16 h-16 mb-2" src={tecnologia.image} alt="" />
+                    <div key={tecnologia.name} className='flex flex-col w-5/12 h-5/12 items-center p-2 justify-between shadow-xl rounded-2xl max-w-[180px]'>
+                        <img className="rounded-lg object-contain w-7/12 max-w-[86px] mb-2" src={tecnologia.image} alt="" />
                         <span>{tecnologia.name}</span>
                     </div>
                 ))}

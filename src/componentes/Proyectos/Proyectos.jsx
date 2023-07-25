@@ -32,7 +32,7 @@ export default function Proyectos () {
                     <Proyecto lenguaje1={javass} lenguaje2={css3} lenguaje3={html5} title={'Maqueta E-Commerce (1° Proyecto)'} imagen={<Bike />}
                     description="Maqueta de E-Commerce (Responsive Design) sobre bicicletas, hecho exclusivamente en HTML, CSS y Javascript nativo" zoom={'xl:-translate-x-[345px] xl:-translate-y-[225px]'} videoproject={maquetaecommerce} pagina={'https://maqueta-e-commerce.netlify.app'}/>
                     <Proyecto lenguaje2={javass} title={'Retos de Javascript'} imagen={<span className='text-5xl font-bold'>Retos<span className="p-1 text-black uppercase bg-yellow-400 rounded-lg">js</span></span>}
-                    description="Retos de Javascript que voy realizando de diferentes paginas web" zoom={'xl:-translate-x-[825px] xl:-translate-y-[225px]'} videoproject={reto} pagina={'https://germansanchez.netlify.app/'}/>
+                    description="Retos de Javascript que voy realizando de diferentes paginas web" zoom={'xl:-translate-x-[825px] xl:-translate-y-[225px]'} videoproject={reto}/>
                 </div>
             </div>
         </section>

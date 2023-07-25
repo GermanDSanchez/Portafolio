@@ -52,7 +52,7 @@ export default function Proyecto ({ lenguaje1, lenguaje2, lenguaje3, title, imag
 
     return (
         <>
-        <article ref={containerRef} className={`relative p-5 shadow-xl bg-orange-50 hover:shadow-2xl rounded-xl flex flex-col items-center justify-center 
+        <article onClick={asd} ref={containerRef} className={`cursor-pointer relative p-5 shadow-xl bg-orange-50 hover:shadow-2xl rounded-xl flex flex-col items-center justify-center 
             transform translate-x-0 translate-y-0 duration-200 ${video ? `xl:scale-125 xl:z-40 xl:transform xl:rounded-l-lg xl:rounded-r-none xl:duration-500 ${zoom} xl:bg-orange-100` : ''}`}>
             <div className="text-center flex flex-col items-center">
                 <div className="absolute -top-5 -left-4 -rotate-[15deg]">
@@ -61,9 +61,9 @@ export default function Proyecto ({ lenguaje1, lenguaje2, lenguaje3, title, imag
                     <img className='absolute w-10 top-2 -left-2 -rotate-[40deg]' src={lenguaje3} alt="" />
                 </div>
                 <div className='flex items-center justify-center absolute top-1 right-1 gap-2 z-40'>
-                    <a href=''><GitHub width={30} height={30}/></a>
-                    {isWideScreen ? <button onClick={asd}><Eye width={30} height={30}/></button> :
-                    <a href=''><Eye width={30} height={30}/></a>}
+                    <a href={pagina} target="_blank" rel="noreferrer"><GitHub width={30} height={30}/></a>
+                    {isWideScreen ? <Eye width={30} height={30}/> :
+                    <a href={pagina} target="_blank" rel="noreferrer"><Eye width={30} height={30}/></a>}
                 </div>
                 <div className="h-52 w-52 flex justify-center items-center">
                     {imagen}

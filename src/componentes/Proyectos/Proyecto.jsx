@@ -3,7 +3,7 @@ import GitHub from "../icons/GitHub";
 import Eye from "../icons/Eye";
 
 // eslint-disable-next-line react/prop-types
-export default function Proyecto ({ lenguaje1, lenguaje2, lenguaje3, title, imagen, description, zoom, videoproject, pagina }) {
+export default function Proyecto ({ lenguaje1, lenguaje2, lenguaje3, title, imagen, description, zoom, videoproject, pagina, repo }) {
 
     const [video, setVideo] = useState(false)
 
@@ -43,7 +43,7 @@ export default function Proyecto ({ lenguaje1, lenguaje2, lenguaje3, title, imag
         };
       }, []);
 
-      const asd = () => {
+      const mostrarVideo = () => {
         setVideo(!video)
         setTimeout(() => {
             setLink(!link)
@@ -52,7 +52,7 @@ export default function Proyecto ({ lenguaje1, lenguaje2, lenguaje3, title, imag
 
     return (
         <>
-        <article onClick={asd} ref={containerRef} className={`cursor-pointer relative p-5 shadow-xl bg-orange-50 hover:shadow-2xl rounded-xl flex flex-col items-center justify-center 
+        <article onClick={mostrarVideo} ref={containerRef} className={`cursor-pointer relative p-5 shadow-xl bg-orange-50 hover:shadow-2xl rounded-xl flex flex-col items-center justify-center 
             transform translate-x-0 translate-y-0 duration-200 ${video ? `xl:scale-125 xl:z-40 xl:transform xl:rounded-l-lg xl:rounded-r-none xl:duration-500 ${zoom} xl:bg-orange-100` : ''}`}>
             <div className="text-center flex flex-col items-center">
                 <div className="absolute -top-5 -left-4 -rotate-[15deg]">
@@ -60,8 +60,8 @@ export default function Proyecto ({ lenguaje1, lenguaje2, lenguaje3, title, imag
                     <img className='absolute w-10 top-0.5 left-1 z-10 -rotate-[15deg]' src={lenguaje2} alt="" />
                     <img className='absolute w-10 top-2 -left-2 -rotate-[40deg]' src={lenguaje3} alt="" />
                 </div>
-                <div className='flex items-center justify-center absolute top-1 right-1 gap-2 z-40'>
-                    <a href={pagina} target="_blank" rel="noreferrer"><GitHub width={30} height={30}/></a>
+                <div className='z-40 flex items-center justify-center absolute top-1 right-1 gap-2'>
+                    <a onClick={(event) => event.stopPropagation()} href={repo} target="_blank" rel="noreferrer"><GitHub width={30} height={30}/></a>
                     {isWideScreen ? <Eye width={30} height={30}/> :
                     <a href={pagina} target="_blank" rel="noreferrer"><Eye width={30} height={30}/></a>}
                 </div>

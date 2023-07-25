@@ -3,7 +3,7 @@ import GitHub from "../icons/GitHub";
 import Eye from "../icons/Eye";
 
 // eslint-disable-next-line react/prop-types
-export default function Proyecto ({ lenguaje1, lenguaje2, lenguaje3, title, imagen, description, zoom, videoproject }) {
+export default function Proyecto ({ lenguaje1, lenguaje2, lenguaje3, title, imagen, description, zoom, videoproject, pagina }) {
 
     const [video, setVideo] = useState(false)
 
@@ -76,7 +76,7 @@ export default function Proyecto ({ lenguaje1, lenguaje2, lenguaje3, title, imag
         <div ref={containerRef2} className={`${video ? 'w-[730px] h-[430px] rounded-r-lg bg-orange-100 p-4 absolute flex flex-col items-center z-40 opacity-1 visible transform translate-x-[295px] translate-y-[117px] duration-500' : 
         'xl:w-[730px] absolute flex flex-col items-center z-40 opacity-0 invisible transform translate-x-[2000px] translate-y-44 duration-500'}`}>
             <div className={`w-[714px] absolute rounded-t-full h-14 bg-orange-100 flex justify-center items-end -z-10 ${link ? 'transform translate-x-0 -translate-y-[70px] duration-500' : 'transform translate-x-0 translate-y-0 duration-500'}`}>
-                <a className="text-xl font-semibold" href="https://apimovies-germansanchez.netlify.app/" target="_blank" rel="noreferrer">https://apimovies-germansanchez.netlify.app/</a>
+                <a className="text-xl font-semibold" href={pagina} target="_blank" rel="noreferrer">{pagina}</a>
             </div>
             <div>
                 <video className='w-full' src={videoproject} controls={false} autoPlay muted loop></video>

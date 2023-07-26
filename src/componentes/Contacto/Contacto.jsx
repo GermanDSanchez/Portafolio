@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import GitHub from '../icons/GitHub';
 import LinkedIn from '../icons/LinkedIn';
+import cv from "../../../public/cv/cv.pdf"
 
 export default function Contacto () {
 
@@ -32,7 +33,7 @@ export default function Contacto () {
             <a className="w-[2.65rem] h-[2.65rem] border-black rounded-md bg-black flex items-center justify-center" href="https://github.com/GermanDSanchez" target="_blank" rel="noreferrer">
                 <GitHub fill="#fff"/>
             </a>
-            <button className="w-[2.65rem] h-[2.65rem] text-xl font-bold border-2 border-black rounded-md">CV</button>
+            <a href={cv} target="_blank" rel="noreferrer" className="flex items-center justify-center w-[2.65rem] h-[2.65rem] text-xl font-bold border-2 border-black rounded-md">CV</a>
             <a href="https://www.linkedin.com/in/german-sanchez-094528256/" target="_blank" rel="noreferrer">
                 <LinkedIn fill="#0a66c2"/>
             </a>

@@ -16,7 +16,7 @@ export default function Presentacion () {
                 <a className="w-[2.65rem] h-[2.65rem] border-black rounded-md bg-black flex items-center justify-center" href="https://github.com/GermanDSanchez" target="_blank" rel="noreferrer"><GitHub fill="#fff"/></a>
                 <a href="https://www.linkedin.com/in/german-sanchez-094528256/" target="_blank" rel="noreferrer"><LinkedIn fill="#0a66c2"/></a>
             </div>
-            <a href={cv} target="_blank" rel="noreferrer" className="text-xl border-[1px] w-24 border-black rounded-md mt-5 py-1 px-2">Ver CV</a>
+            <a href={cv} target="_blank" rel="noreferrer" className="text-xl border-[1px] w-24 border-black rounded-md mt-5 py-1 px-2 flex justify-center items-center">Ver CV</a>
             <Link to="projects" spy={true} smooth={true} offset={50} duration={500} className="absolute bottom-10 animate-bounce">
                 <Arrow />
             </Link>

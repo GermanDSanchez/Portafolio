@@ -52,7 +52,7 @@ export default function Proyecto ({ lenguaje1, lenguaje2, lenguaje3, title, imag
 
     return (
         <>
-        <article onClick={mostrarVideo} ref={containerRef} className={`cursor-pointer relative p-5 shadow-xl bg-orange-50 hover:shadow-2xl rounded-xl flex flex-col items-center justify-center 
+        <article onClick={mostrarVideo} ref={containerRef} className={`sm:h-[344px] cursor-pointer relative p-5 shadow-xl bg-orange-50 hover:shadow-2xl rounded-xl flex flex-col items-center justify-center 
             transform translate-x-0 translate-y-0 duration-200 ${video ? `xl:scale-125 xl:z-40 xl:transform xl:rounded-l-lg xl:rounded-r-none xl:duration-500 ${zoom} xl:bg-orange-100` : ''}`}>
             <div className="text-center flex flex-col items-center">
                 <div className="absolute -top-5 -left-4 -rotate-[15deg]">

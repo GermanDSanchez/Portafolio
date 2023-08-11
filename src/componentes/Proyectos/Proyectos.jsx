@@ -9,7 +9,7 @@ import chevrolet from '../../../public/img/chevrolet.png'
 import maquetagoogle from '../../../public/video/maquetagoogle.webm'
 import apimovie from '../../../public/video/apimovie.webm'
 import portafolio from '../../../public/video/portafolio.webm'
-import reto from '../../../public/video/reto.mp4'
+import chevroletvideo from '../../../public/video/chevroletvideo.mp4'
 import pongvideo from '../../../public/video/pong.mp4'
 import Proyecto from './Proyecto'
 
@@ -28,7 +28,7 @@ export default function Proyectos () {
                     <Proyecto lenguaje1={angular} lenguaje2={tailwind} title={'Juego PONG'} imagen={<img className='w-44' src={pong}/>}
                     description="Juego Pong/Tenis retro hecho en Angular y Tailwind" zoom={'xl:-translate-x-[105px] xl:-translate-y-[225px]'} videoproject={pongvideo} pagina={'https://juego-pong.netlify.app'} repo={'https://github.com/GermanDSanchez/Juego-Pong'}/>
                     <Proyecto lenguaje1={angular} lenguaje2={tailwind} title={'Maqueta/Clon Chevrolet'} imagen={<img className='w-52' src={chevrolet}/>}
-                    description="Maqueta/clon landing-page de Chevrolet con Angular y Tailwind" zoom={'xl:-translate-x-[585px] xl:-translate-y-[225px]'} videoproject={reto} pagina={'https://maqueta-chevrolet.netlify.app'} repo={'https://github.com/GermanDSanchez/Maqueta-Chevrolet'}/>
+                    description="Maqueta/clon landing-page de Chevrolet con Angular y Tailwind" zoom={'xl:-translate-x-[585px] xl:-translate-y-[225px]'} videoproject={chevroletvideo} pagina={'https://maqueta-chevrolet.netlify.app'} repo={'https://github.com/GermanDSanchez/Maqueta-Chevrolet'}/>
                 </div>
             </div>
         </section>
